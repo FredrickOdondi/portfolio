@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fredrick Otieno's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        /* Keyframes for animations */
+        @keyframes fadeInUp {
+            from {
+                transform: translate3d(0, 40px, 0);
+                opacity: 0;
+            }
+            to {
+                transform: translate3d(0, 0, 0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes rotateIn {
+            from {
+                transform: rotate(-360deg);
+                opacity: 0;
+            }
+            to {
+                transform: rotate(0deg);
+                opacity: 1;
+            }
+        }
+
+        /* Animation classes */
+        .fade-in-up {
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        .rotate-in {
+            animation: rotateIn 1s ease-out forwards;
+        }
+
+        /* Utility class for animation delay */
+        .animation-delay-100 {
+            animation-delay: 0.1s;
+        }
+
+        .animation-delay-200 {
+            animation-delay: 0.2s;
+        }
+
+        .animation-delay-300 {
+            animation-delay: 0.3s;
+        }
+
+        .animation-delay-400 {
+            animation-delay: 0.4s;
+        }
+
+        .animation-delay-500 {
+            animation-delay: 0.5s;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white font-roboto h-100vh">
+    <div class="container mx-auto px-4 py-8">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold mb-4 fade-in-up text-green-400 text-start  ">F.O.O</h1>
+           
+            <a href="https://github.com/FredrickOdondi" target="_blank" class="text-green-400 hover:text-green-500 mt-4 inline-block fade-in-up animation-delay-200">
+                <i class="fab fa-github mr-2 "></i>Visit my GitHub
+            </a>
+        </header>
+
+        <section class="mb-60 ">
+            
+            <h2 class="text-2xl font-bold mb-6 fade-in-up animation-delay-300 text-green-400">Hi, my name is</h2>
+            <h2 class="text-6xl font-bold mb-3 text-gray-200">Fredrick Otieno Odondi</h2>
+            <h2 class="text-6xl font-bold text-gray-500">I build things for the</h2>
+            <h2 class="text-6xl font-bold text-gray-500 mb-5">web.</h2>
+            <p class="text-xl fade-in-up animation-delay-400 text-gray-400 mb-5">
+                I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. 
+            </p>
+            <p class="text-xl fade-in-up animation-delay-400 text-gray-400 mb-5">
+                Currently, I’m focused on building accessible, human-centered products 
+            </p>
+            <a href="https://github.com/FredrickOdondi" target="_blank" class="text-green-400 hover:text-green-500 mt-4 inline-block fade-in-up animation-delay-200 border-2 p-5 border-green-400">
+                <i class="fab fa-github mr-2 "></i>Visit my GitHub
+            </a>
+            <a href="https://github.com/FredrickOdondi" target="_blank" class="text-green-400 hover:text-green-500 mt-4 inline-block fade-in-up animation-delay-200 border-2 p-5 border-green-400">
+                <i class="fab fa-instagram mr-2 "></i>Say Hello!
+            </a>
+            <a href="https://github.com/FredrickOdondi" target="_blank" class="text-green-400 hover:text-green-500 mt-4 inline-block fade-in-up animation-delay-200 border-2 p-5 border-green-400">
+                <i class="fab fa-twitter mr-2 "></i>Say Hello!
+            </a>
+            <a href="https://github.com/FredrickOdondi" target="_blank" class="text-green-400 hover:text-green-500 mt-4 inline-block fade-in-up animation-delay-200 border-2 p-5 border-green-400">
+                <i class="fab fa-linkedin mr-2 "></i>Say Hello!
+            </a>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 rotate-in"> <span class="text-green-400 text-2xl font-normal">01. </span>About Me</h2>
+            <div class="flex flex-row ">
+                <div class="w-[600px]">
+                    <p class="mb-5 text-gray-400 text-xl">I am a passionate developer specializing in <span class="text-green-400">React</span> and <span class="text-green-400">React Native.</span> With a keen eye for <span class="text-green-400">UI/UX design</span>, I strive to create applications that are not only </p>
+                    <p class="text-gray-400 text-xl">
+                        functional but also intuitive and visually appealing. My journey in the tech industry has equipped me with the skills to build seamless, user-friendly web and mobile applications. I believe in continuous learning and improvement, and I'm always ready to explore new technologies and techniques to stay at the forefront of the rapidly evolving tech landscape.
+                    </p>
+                </div>
+                <div class="mr-auto ml-[80px]">
+                    <img class="h-80 w-80" src="fred.jpg" alt="">
+                </div>
+            </div>
+            
+        </section>
+    </div>
+</body>
+
+</html>
